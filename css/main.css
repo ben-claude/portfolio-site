@@ -1,0 +1,136 @@
+:root {
+  --greycolor: #7d97ad;
+  --blackcolor: #2d3c49;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+figure {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh; /* do not use 'height' instead of 'min-height': content total height can be bigger than the viewport height */
+  padding: 5vh;
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    min-height: 100vh;
+    padding: 0;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.udacity-img {
+  width: auto;
+  height: 80px;
+}
+
+.web-img {
+  width: 100%;
+  height: 350px;
+}
+
+@media screen and (max-width: 400px) {
+  .web-img {
+    height: 200px;
+  }
+}
+
+hr {
+    border-top: 3px solid;
+    margin: 1em 0;
+    border-color: var(--greycolor);
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.name-container p {
+  color: var(--blackcolor);
+  margin: 0;
+}
+
+.name-container p:first-child {
+  font-size: 3em;
+}
+
+.work-item-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+}
+
+.work-item-header h1 {
+  color: var(--greycolor);
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.work-item-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.work-item-projects figcaption {
+  color: var(--blackcolor);
+  font-size: 2em;
+}
+
+.work-item-projects a {
+  color: var(--blackcolor);
+  font-size: 0.9em;
+  text-decoration: none;
+}
+
+.projects-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 400px) {
+  .projects-item {
+    margin: 2vw;
+  }
+}
+
+figure figcaption {
+  text-align: center;
+}
+
