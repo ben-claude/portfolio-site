@@ -17,7 +17,14 @@
     <hr>
     <main>
       <section class="item">
-        <img class="web-picture" src="img/web.png" alt="image with HTML code">
+        <!-- use small size/kilobytes image on small viewport/device -->
+        <img class="web-picture"
+             srcset="img/web-900w.png 900w,
+                     img/web-400w.png 400w"
+             sizes="(max-width: 400px) 400px,
+                    900px"
+             src="img/web-900w.png"
+             alt="image with HTML code">
       </section>
       <section class="item">
         <header class="work-header">
